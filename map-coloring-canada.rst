@@ -1,3 +1,4 @@
+<code>
 import dwavebinarycsp
 from dwave.system.samplers import DWaveSampler
 from dwave.system.composites import EmbeddingComposite
@@ -63,3 +64,4 @@ if not csp.check(sample):              # doctest: +SKIP
     print("Failed to color map")
 else:
     plot_map(sample)
+</code>
