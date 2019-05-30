@@ -1,3 +1,4 @@
+
 import dwavebinarycsp
 from dwave.system.samplers import DWaveSampler
 from dwave.system.composites import EmbeddingComposite
@@ -22,7 +23,7 @@ def plot_map(sample):
     # Translate from binary to integer color representation
     color_map = {}
     for province in provinces:
-          for i in range(colors):
+        for i in range(colors):
             if sample[province+str(i)]:
                 color_map[province] = i
     # Plot the sample with color-coded nodes
@@ -63,5 +64,3 @@ if not csp.check(sample):              # doctest: +SKIP
     print("Failed to color map")
 else:
     plot_map(sample)
-
-
